@@ -1,7 +1,9 @@
 AEON-cryptonote-pool
 ====================
 Modified from Cryptonote-Universal-Pool:
-High performance Node.js (with native C addons) mining pool for CryptoNote-Light coins, the AEON. Should also work with other cryptonote based coins if properly changed the config.json file, such as Bytecoin, DuckNote, Monero, QuazarCoin, Boolberry, Dashcoin, etc..
+High performance Node.js (with native C addons) mining pool for CryptoNote-Light coins, the AEON. 
+
+Should also work with other cryptonote based coins if properly changed the config.json file, such as Bytecoin, DuckNote, Monero, QuazarCoin, Boolberry, Dashcoin, etc..
 
 Comes with lightweight example front-end script which uses the pool's AJAX API.
 
