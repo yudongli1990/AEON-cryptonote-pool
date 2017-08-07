@@ -1,7 +1,8 @@
-cryptonote-xmr-pool
+AEON-cryptonote-pool
 ====================
+Modified from Cryptonote-Universal-Pool:
+High performance Node.js (with native C addons) mining pool for CryptoNote-Light coins, the AEON. Should also work with other cryptonote based coins if properly changed the config.json file, such as Bytecoin, DuckNote, Monero, QuazarCoin, Boolberry, Dashcoin, etc..
 
-High performance Node.js (with native C addons) mining pool for CryptoNote based coins such as Bytecoin, DuckNote, Monero, QuazarCoin, Boolberry, Dashcoin, etc..
 Comes with lightweight example front-end script which uses the pool's AJAX API.
 
 
@@ -81,8 +82,7 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
 
 #### Pools Using This Software
 
-* http://xmr.poolto.be run by PCFil
-* http://xmr.cncoin.farm run by clintar
+* Good for both private pool and public mining pools.
 
 Usage
 ===
