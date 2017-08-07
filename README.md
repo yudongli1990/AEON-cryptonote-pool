@@ -128,13 +128,13 @@ npm update
 Explanation for each field:
 ```javascript
 /* Used for storage in redis so multiple coins can share the same redis instance. */
-"coin": "ducknote",
+"coin": "aeon2",
 
 /* Used for front-end display */
-"symbol": "XDN",
+"symbol": "AEON",
 
 /* Minimum units in a single coin, see COIN constant in DAEMON_CODE/src/cryptonote_config.h */
-"coinUnits": 100000000,
+"coinUnits": 1000000000000,
 
 /* Coin network time to mine one block, see DIFFICULTY_TARGET constant in DAEMON_CODE/src/cryptonote_config.h */
 "coinDifficultyTarget": 240,
@@ -173,7 +173,7 @@ Explanation for each field:
     "clusterForks": "auto",
 
     /* Address where block rewards go, and miner payments come from. */
-    "poolAddress": "ddehi53dwGSBEXdhTYtga2R3fS4y9hRz4YHAsLABJpH75yUd5EDQmuL3yDBj1mG6MMeDfydY9vp4zFVVNQ99FTYq2PpsFJP2y"
+    "poolAddress": "here, copy and paste Your Pool Address"
 
     /* Poll RPC daemons for new blocks every this many milliseconds. */
     "blockRefreshInterval": 1000,
@@ -240,13 +240,13 @@ Explanation for each field:
 /* Module that sends payments to miners according to their submitted shares. */
 "payments": {
     "enabled": true,
-    "interval": 600, //how often to run in seconds
-    "maxAddresses": 50, //split up payments if sending to more than this many addresses
-    "mixin": 3, //number of transactions yours is indistinguishable from
-    "transferFee": 5000000000, //fee to pay for each transaction
-    "minPayment": 100000000000, //miner balance required before sending payment
-    "maxTransactionAmount": 0, //split transactions by this amount(to prevent "too big transaction" error)
-    "denomination": 100000000000 //truncate to this precision and store remainder
+    "interval": 3600, //how often to run in seconds
+    "maxAddresses": 20, //split up payments if sending to more than this many addresses
+    "mixin": 2, //number of transactions yours is indistinguishable from
+    "transferFee": 10000000000, //fee to pay for each transaction
+    "minPayment": 500000000000, //miner balance required before sending payment, 0.5AEON
+    "maxTransactionAmount": 200000000000000, //split transactions by this amount(to prevent "too big transaction" error)
+    "denomination": 10000000000 //truncate to this precision and store remainder , 0.01AEON
 },
 
 /* Module that monitors the submitted block maturities and manages rounds. Confirmed
@@ -269,10 +269,10 @@ Explanation for each field:
     "enabled": true,
     "hashrateWindow": 600, //how many second worth of shares used to estimate hash rate
     "updateInterval": 3, //gather stats and broadcast every this many seconds
-    "port": 8117,
+    "port": 8117, //if you want to change this, also remember to change the port in /website/config.js
     "blocks": 30, //amount of blocks to send at a time
     "payments": 30, //amount of payments to send at a time
-    "password": "test" //password required for admin stats
+    "password": "Change to your Password" //password required for admin stats
 },
 
 /* Coin daemon connection details. */
