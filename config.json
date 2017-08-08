@@ -19,7 +19,7 @@
     "poolServer": {
         "enabled": true,
         "clusterForks": 4,
-        "poolAddress": "WmtueUL4cvy7wmfX4EgYPjeSNVUDqSMqZfyr4RrS6g86QoLKQ9DCw3dhvQrzr5EkZnHFtzJ6EpgiKNa7Ne6qX9e41pRw6xtuh",
+        "poolAddress": " Your Pool Wallet Address",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "ports": [
@@ -88,9 +88,9 @@
         "interval": 30,
         "depth": 60,
         "poolFee": 1,
-        "devDonation": 0,
-        "coreDevDonation": 0,
-        "extraFeaturesDevDonation":0
+        "devDonation": 0.1,
+        "coreDevDonation": 0.1,
+        "extraFeaturesDevDonation":0.1
     },
 
     "api": {
@@ -100,12 +100,7 @@
         "port": 8119,
         "blocks": 30,
         "payments": 30,
-		"ssl": true, 
-		"sslport": 9119,
-		"sslcert": "/etc/nginx/certs/sumominer.com.crt",
-		"sslkey": "/etc/nginx/certs/sumominer.com.pem",
-		"sslca": "/etc/nginx/certs/let_encrypt_ca.crt",
-        "password": "your_password"
+	"password": "your_password"
     },
 
     "daemon": {
